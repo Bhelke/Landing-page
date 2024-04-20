@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1 class="logo">Robto</h1>
+        <div class="search">
+            <button class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button>
+            <input class="input" type="search" placeholder="Search Doctor">
+        </div>
+
+        <div class="nav-items1">
+            <div id="items">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="job page.html">Job</a></li>
+                    <li><a href="job seeker notification.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                        </svg></a>
+                    </li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn"><img src="assets/Profile Icon.png" alt="Profile" width="30px"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <div class="dropdown-box">
+                                <p>zeenajalil@gmail.com</p>
+                                <div id="dropdown-pages">
+                                    <img src="assets/flowbite_profile-card-solid.png" alt="">
+                                    <a href="profile.html">Profile</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/Frame 91.png" alt="">
+                                    <a href="save page.html">My Jobs</a>
+                                </div>
+                                <div id="dropdown-pages">
+                                    <img src="assets/pajamas_question.png" alt="">
+                                    <a href="">Help Centre</a>
+                                </div>
+
+                                <button><a href="index.html">Sign out</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <button class="btn"><a href="">Post Job</a></button>
+        </div>
+    </div>
+
+    <!-- Navbar component -->
+    <div class="nav-container">
+        <div class="left-container">
+            <div class="left-img">
+                <img src="assets/wepik-export-20240315112712cPUh 1.png" alt="" class="left-img">
+            </div>
+            <!-- <img src="assets/Rectangle 1.png" alt="" class="color"> -->
+            <div class="left-content">
+                <p id="head">We Offer <b>30,000+</b> <br> Job Vacancies Right Now!</p>
+                <p id="info">
+                    Lorem ipsum dolor sit amet consectetur. 
+                    Vitae sed vestibulum <br> hendrerit 
+                    quisque ultrices tellus. Lacus ultrices 
+                    placerat vel rhoncus
+                </p>
+                <img src="assets/Frame 3.png" alt="" class="box">
+                <p id="circle">or</p>
+                <p id="box1">FIND YOUR JOB!</p>
+            </div>
+        </div>
+        <div>
+            <img src="assets/Home page SVG.svg" alt="" class="right-img">
+        </div>
+    </div>
+
+    <!-- End of nav -->
+
+    <!-- Search Box -->
+    <div class="job-search">
+        <div class="search-field">
+            <div class="location">
+                <input type="text" placeholder="Location" class="input-box">
+                <img src="assets/fluent_my-location-16-filled.png" alt="Location-logo" width="16px" height="16px" id="location-icon">
+            </div>
+            <div class="category">
+                <input type="text" placeholder="Job Tittle" class="input-box">
+                <select id="box" class="input-box">
+                    <option>Choose Category</option>
+                    <option value="1">Developer</option>
+                    <option value="2">Technology</option>
+                    <option value="3">Accounting</option>
+                    <option value="4">Dermatologist</option>
+                </select>
+            </div>   
+        </div>
+        <div class="search-box">
+            <img src="assets/Frame 4.png" alt="Serach-icon" width="150px" height="150px">
+        </div>
+    </div>
+    <!-- End of Search box -->
+
+    <!-- Recent Job Section -->
+    <div class="recent-jobs">
+        <div class="head">
+            <p>RECENT JOBS</p>
+            <img src="assets/Group 2.png" alt="line">
+        </div>
+        <div class="tab">
+            <button class="all selected" id="tab1">FEATURED</button>
+            <button class="all" id="tab2">RECENT JOB</button>
+            <button class="all" id="tab3">FULL TIME</button>
+            <button class="all" id="tab4">PART TIME</button>
+        </div>
+    </div>
+
+    <div class="component">
+        <div class="component-box">
+            <div class="component-divisions">
+                <img src="assets/828380_preview 1.png" alt="">
+                <div class="about-job">
+                    <p id="job-head">Senior Health and Food</p>
+                    <p id="company">KAPR Ltd</p>
+                    <div id="rupee">
+                        <img src="assets/lucide_receipt-indian-rupee.png" alt="">
+                        <img src="assets/₹30k - ₹40k.png" alt="">
+                    </div>
+                    <div id="job-location">
+                        <img src="assets/carbon_location-filled.png" alt="">
+                        <p>
+                            Grand Central Pkwy Hollis NY 11003 <br>
+                            USA
+                        </p>
+                    </div>
+                    <div id="posted">
+                        <img src="assets/ic_baseline-access-time.png" alt="">
+                        <p>1 Day ago</p>
+                    </div>
+                </div>
+                <div id="job-buttons">
+                    <div id="freelance-button">
+                        <img src="assets/Frame 8.png" alt="">
+                        <button><a href="">FREELANCE</a></button>
+                    </div>
+                    <button id="apply"><a href="">APPLY</a></button>
+                </div>
+            </div>
+            <div class="division-footer">
+                <img src="assets/fluent_tag-multiple-16-filled.png" alt="">
+                <p id="tag">Tagged as: </p>
+                <p id="tagged">Media, Medical, Restaurants</p>
+            </div>
+        </div>
+
+        <div class="component-box">
+            <div class="component-divisions">
+                <img src="assets/4388298_2289113 1.png" alt="">
+                <div class="about-job">
+                    <p id="job-head">Senior Health and Food</p>
+                    <p id="company">GS Inc</p>
+                    <div id="rupee">
+                        <img src="assets/lucide_receipt-indian-rupee.png" alt="">
+                        <img src="assets/₹30k - ₹40k.png" alt="">
+                    </div>
+                    <div id="job-location">
+                        <img src="assets/carbon_location-filled.png" alt="">
+                        <p>
+                            Grand Central Pkwy Hollis NY 11003 <br>
+                            USA
+                        </p>
+                    </div>
+                    <div id="posted">
+                        <img src="assets/ic_baseline-access-time.png" alt="">
+                        <p>1 Day ago</p>
+                    </div>
+                </div>
+                <div id="job-buttons">
+                    <div id="freelance-button">
+                        <img src="assets/Frame 8(1).png" alt="">
+                        <button><a href="">FREELANCE</a></button>
+                    </div>
+                    <button id="apply"><a href="">APPLY</a></button>
+                </div>
+            </div>
+            <div class="division-footer">
+                <img src="assets/fluent_tag-multiple-16-filled.png" alt="">
+                <p id="tag">Tagged as: </p>
+                <p id="tagged">Media, Medical, Restaurants</p>
+            </div>
+        </div>
+
+        <div class="component-box">
+            <div class="component-divisions">
+                <img src="assets/1184785_OSKJOG0 1.png" alt="">
+                <div class="about-job">
+                    <p id="job-head">Senior Health and Food</p>
+                    <p id="company">Har Ltd</p>
+                    <div id="rupee">
+                        <img src="assets/lucide_receipt-indian-rupee.png" alt="">
+                        <img src="assets/₹30k - ₹40k.png" alt="">
+                    </div>
+                    <div id="job-location">
+                        <img src="assets/carbon_location-filled.png" alt="">
+                        <p>
+                            Grand Central Pkwy Hollis NY 11003 <br>
+                            USA
+                        </p>
+                    </div>
+                    <div id="posted">
+                        <img src="assets/ic_baseline-access-time.png" alt="">
+                        <p>1 Day ago</p>
+                    </div>
+                </div>
+                <div id="job-buttons">
+                    <div id="freelance-button">
+                        <img src="assets/Frame 8(1).png" alt="">
+                        <button><a href="">FREELANCE</a></button>
+                    </div>
+                    <button id="apply"><a href="">APPLY</a></button>
+                </div>
+            </div>
+            <div class="division-footer">
+                <img src="assets/fluent_tag-multiple-16-filled.png" alt="">
+                <p id="tag">Tagged as: </p>
+                <p id="tagged">Media, Medical, Restaurants</p>
+            </div>
+        </div>
+
+        <div class="component-box">
+            <div class="component-divisions">
+                <img src="assets/4388302_2287321 2.png" alt="">
+                <div class="about-job">
+                    <p id="job-head">Senior Health and Food</p>
+                    <p id="company">Baal Ltd</p>
+                    <div id="rupee">
+                        <img src="assets/lucide_receipt-indian-rupee.png" alt="">
+                        <img src="assets/₹30k - ₹40k.png" alt="">
+                    </div>
+                    <div id="job-location">
+                        <img src="assets/carbon_location-filled.png" alt="">
+                        <p>
+                            Grand Central Pkwy Hollis NY 11003 <br>
+                            USA
+                        </p>
+                    </div>
+                    <div id="posted">
+                        <img src="assets/ic_baseline-access-time.png" alt="">
+                        <p>1 Day ago</p>
+                    </div>
+                </div>
+                <div id="job-buttons">
+                    <div id="freelance-button">
+                        <img src="assets/Frame 8(1).png" alt="">
+                        <button><a href="">FREELANCE</a></button>
+                    </div>
+                    <button id="apply"><a href="">APPLY</a></button>
+                </div>
+            </div>
+            <div class="division-footer">
+                <img src="assets/fluent_tag-multiple-16-filled.png" alt="">
+                <p id="tag">Tagged as: </p>
+                <p id="tagged">Media, Medical, Restaurants</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Recent Job Section -->
+
+    <!-- Offering Deals Section -->
+    <div class="offering-deals-section">
+        <div class="offering-deals">
+            <p class="head">OFFERING THE BEST DEALS</p>
+            <div id="deals-boxes">
+                <div id="deals-box">
+                    <div id="deals-head">
+                        <img src="assets/icon-park-outline_search.png" alt="">
+                        <p>Search a Jobs</p>
+                    </div>
+                    <p id="deals-head-info">
+                        Lorem ipsum dolor sit amet consectetur.
+                        Lacus egestas ut amet tempor.
+                    </p>
+                </div>
+                <div id="deals-box">
+                    <div id="deals-head">
+                        <img src="assets/mdi_super-chat-for-good.png" alt="">
+                        <p>Apply a Good Job</p>
+                    </div>
+                    <p id="deals-head-info">
+                        Lorem ipsum dolor sit amet consectetur.
+                        Lacus egestas ut amet tempor.
+                    </p>
+                </div>
+                <div id="deals-box">
+                    <div id="deals-head">
+                        <img src="assets/Vector.png" alt="">
+                        <p>Happy Suppory</p>
+                    </div>
+                    <p id="deals-head-info">
+                        Lorem ipsum dolor sit amet consectetur.
+                        Lacus egestas ut amet tempor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Offering Deals Section -->
+
+    <!-- Top Hiring Section -->
+    <div class="top-hiring-companies">
+        <div class="head">
+            <p>TOP HIRING COMPANIES</p>
+            <img src="assets/Group 2.png" alt="line">
+        </div>
+
+        <div class="top-hire">
+            <div class="company-openings" id="openings1">
+                <div class="nameOfCompany">
+                    <div class="company-name">
+                        <p id="name">Apus Ltd.</p>
+                        <p id="place">(India)</p>
+                    </div>
+                    <img src="assets/828260_preview 2.png" alt="">
+                </div>
+                <button><a href="">3 Openings</a></button>
+            </div>
+
+            <div class="company-openings" id="openings2">
+                <div class="nameOfCompany">
+                    <div class="company-name">
+                        <p id="name">Striple Ltd.</p>
+                        <p id="place">(India)</p>
+                    </div>
+                    <img src="assets/828260_preview 2 (1).png" alt="">
+                </div>
+                <button><a href="">3 Openings</a></button>
+            </div>
+
+            <div class="company-openings" id="openings3">
+                <div class="nameOfCompany">
+                    <div class="company-name">
+                        <p id="name">Green People</p>
+                        <p id="place">(India)</p>
+                    </div>
+                    <img src="assets/828260_preview 2 (2).png" alt="">
+                </div>
+                <button><a href="">3 Openings</a></button>
+            </div>
+
+            <div class="company-openings" id="openings4">
+                <div class="nameOfCompany">
+                    <div class="company-name">
+                        <p id="name">Cultural Inc.</p>
+                        <p id="place">(India)</p>
+                    </div>
+                    <img src="assets/828260_preview 2 (3).png" alt="">
+                </div>
+                <button><a href="">3 Openings</a></button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Top Hiring Section -->
+
+    <!-- Jobs Available Section -->
+    <div class="jobs-available">
+        <div class="total-jobs-vailable">
+            <div class="total-jobs">
+                <p id="persons">5890+</p>
+                <img src="assets/Group 7.png" alt="line">
+                <p id="job1">Job Available</p>
+            </div>
+            <div class="total-jobs">
+                <p id="persons">146800+</p>
+                <img src="assets/Group 7.png" alt="line">
+                <p id="job1">Members</p>
+            </div>
+            <div class="total-jobs">
+                <p id="persons">36041+</p>
+                <img src="assets/Group 7.png" alt="line">
+                <p id="job1">Resumes</p>
+            </div>
+            <div class="total-jobs">
+                <p id="persons">12930+</p>
+                <img src="assets/Group 7.png" alt="line">
+                <p id="job1">Companies</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Jobs Available Section -->
+     
+    <!-- Popular Categories-->
+    <div class="popular-categories">
+        <div class="categories">
+            <p>POPULAR CATEGORIES</p>
+            <img src="assets/Group 2.png" alt="line">
+        </div>
+
+        <div class="all-categories">
+            <div>
+                <div class="category1">
+                    <img src="assets/fluent_developer-board-16-regular.png" alt="" id="category-img">
+                    <P id="category-name">Developer</P>
+                    <p id="number-of-jobs">7 Jobs</p>
+                </div>
+                <div id="border-bottom">
+
+                </div>
+            </div>
+
+            <div>
+                <div class="category1">
+                    <img src="assets/ri_computer-line.png" alt="" id="category-img">
+                    <P id="category-name">Technology</P>
+                    <p id="number-of-jobs">4 Jobs</p>
+                </div>
+                <div id="border-bottom">
+
+                </div>
+            </div>
+
+            <div>
+                <div class="category1">
+                    <img src="assets/mingcute_government-fill.png" alt="" id="category-img">
+                    <P id="category-name">Management</P>
+                    <p id="number-of-jobs">2 Jobs</p>
+                </div>
+                <div id="border-bottom">
+
+                </div>
+            </div>
+
+            <div>
+                <div class="category1">
+                    <img src="assets/dashicons_food.png" alt="" id="category-img">
+                    <P id="category-name">Restaurants</P>
+                    <p id="number-of-jobs">7 Jobs</p>
+                </div>
+                <div id="border-bottom">
+
+                </div>
+            </div>
+
+            <div>
+                <div class="category1">
+                    <img src="assets/fluent_notepad-edit-16-regular.png" alt="" id="category-img">
+                    <p id="category-name">Accounting</p>
+                    <p id="number-of-jobs">7 Jobs</p>
+                </div>
+                <div id="border-bottom">
+
+                </div>
+            </div>
+
+            <div>
+                <div class="category1">
+                    <img src="assets/solar_medical-kit-outline.png" alt="" id="category-img">
+                    <p id="category-name">Medical</p>
+                    <p id="number-of-jobs">7 Jobs</p>
+                </div>
+                <div id="border-bottom">
+
+                </div>
+            </div>
+            
+            <div>
+                <div class="category1">
+                    <img src="assets/material-symbols_newsmode-outline.png" alt="" id="category-img">
+                    <p id="category-name">News & Media</p>
+                    <p id="number-of-jobs">7 Jobs</p>
+                </div>
+                <div id="border-bottom">
+
+                </div>
+            </div>
+        
+            <div>
+                <div class="category1">
+                    <img src="assets/fluent-mdl2_education.png" alt="" id="category-img">
+                    <p id="category-name">Eduaction</p>
+                    <p id="number-of-jobs">7 Jobs</p>
+                </div>
+                <div id="border-bottom">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonal Section -->
+    <div class="testimonal">
+
+        <!-- Candidate Review -->
+        <div class="candidate-review">
+            <p class="candidate-review-head">WHAT CANDIDATES SAYS?</p>
+
+            <div class="slideshow-container">
+                <!-- Slide-1 -->
+                <div class="mySlides">
+                    <p id="personName">Anushri Leela</p>
+                    <p id="personRole">(Devops)</p>
+                    <p id="personReview">
+                        Lorem ipsum dolor sit amet consectetur. Ipsum <br>
+                        etiam cras pulvinar blanditamet
+                    </p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div> 
+                    <img src="assets/unsplash_3U9BCWHMhUw.png" alt="Profile" id="personProfile">
+                </div>
+                <!-- Slide-2 -->
+                <div class="mySlides">
+                    <p id="personName">Smrithi Mandana</p>
+                    <p id="personRole">(Devops)</p>
+                    <p id="personReview">
+                        Lorem ipsum dolor sit amet consectetur. Ipsum <br>
+                        etiam cras pulvinar blanditamet
+                    </p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div> 
+                    <img src="assets/unsplash_3U9BCWHMhUw.png" alt="Profile" id="personProfile">
+                </div>
+                <!-- Slide-3 -->
+                <div class="mySlides">
+                    <p id="personName">Vaishnavi Priya</p>
+                    <p id="personRole">(Devops)</p>
+                    <p id="personReview">
+                        Lorem ipsum dolor sit amet consectetur. Ipsum <br>
+                        etiam cras pulvinar blanditamet
+                    </p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div> 
+                    <img src="assets/unsplash_3U9BCWHMhUw.png" alt="Profile" id="personProfile">
+                </div>
+            </div>
+
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <!-- Employer Review -->
+        <div class="employer-review">
+            <p class="employer-review-head">WHAT EMPLOYER SAYS?</p>
+
+            <div class="slideshow-container1">
+                <!-- Slide-1 -->
+                <div class="mySlides1">
+                    <p id="personName">Akshaya Sharma</p>
+                    <p id="personRole">(Devops)</p>
+                    <p id="personReview">
+                        Lorem ipsum dolor sit amet consectetur. Ipsum <br>
+                        etiam cras pulvinar blanditamet
+                    </p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div> 
+                    <img src="assets/unsplash_3U9BCWHMhUw (1).png" alt="Profile" id="personProfile">
+                </div>
+                <!-- Slide-2 -->
+                <div class="mySlides1">
+                    <p id="personName">Pavan Kalyan</p>
+                    <p id="personRole">(Devops)</p>
+                    <p id="personReview">
+                        Lorem ipsum dolor sit amet consectetur. Ipsum <br>
+                        etiam cras pulvinar blanditamet
+                    </p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div> 
+                    <img src="assets/unsplash_3U9BCWHMhUw (1).png" alt="Profile" id="personProfile">
+                </div>
+                <!-- Slide-3 -->
+                <div class="mySlides1">
+                    <p id="personName">Naveen Kumar</p>
+                    <p id="personRole">(Devops)</p>
+                    <p id="personReview">
+                        Lorem ipsum dolor sit amet consectetur. Ipsum <br>
+                        etiam cras pulvinar blanditamet
+                    </p>
+                    <div class="stars">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div> 
+                    <img src="assets/unsplash_3U9BCWHMhUw (1).png" alt="Profile" id="personProfile">
+                </div>
+            </div>
+
+            <!-- Dots/bullets/indicators -->
+            <div class="dot-container1">
+                <span class="dot1" onclick="currentSlide1(1)"></span>
+                <span class="dot1" onclick="currentSlide1(2)"></span>
+                <span class="dot1" onclick="currentSlide1(3)"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-fields">
+                <div class="footer-right">
+                    <div id="footer-logo">
+                        <img src="assets/Ellipse 7.png" alt="Logo">
+                        <img src="assets/LOGO.png" alt="" id="footer-logo-head">
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Pellent <br>
+                        esque turpis risus id donec id ultricies fringilla <br>
+                        incidunt.Faucibus nibh leo interdum
+                    </p>
+                    <div class="line1">
+                        <hr>
+                    </div>
+                </div>
+                <div class="footer-left">
+                    <div class="left-head">
+                        <div>
+                            <p>FOR EMPLOYERS</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                        <div>
+                            <p>FOR CANDIDATES</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                        <div>
+                            <p>CONTACT US</p>
+                            <img src="assets/Group 14.png" alt="line">
+                        </div>
+                    </div>
+                    <div class="left-head-info">
+                        <div class="left-head-info1">
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Browse Candidates</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Post a Job</p>
+                            </div>
+                        </div>
+                        <div class="left-head-info1">
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Browse Jobs</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <img src="assets/Vector 13.png" alt="">
+                                <p>Upload CV</p>
+                            </div>
+                        </div>
+                        <div class="left-head-info2">
+                            <div id="about-left-head-info">
+                                <img src="assets/mdi_location.png" alt="">
+                                <p id="address">
+                                    7007 Riverside Dr Redding, <br>
+                                    CA 96001 USA
+                                </p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <img src="assets/material-symbols_mail.png" alt="">
+                                <p>Call us +49 1234 5678 9</p>
+                            </div>
+                            <div id="about-left-head-info">
+                                <img src="assets/mdi_phone.png" alt="">
+                                <p>logo@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line2">
+                <hr>
+            </div>
+            <div class="footer-media">  
+                <div class="social-media">
+                    <div id="media-logos">
+                        <a href="#"><img src="assets/mdi_twitter.png" alt="twitter-logo"></a>
+                        <a href="#"><img src="assets/mdi_youtube.png" alt="youtube-logo"></a>
+                        <a href="#"><img src="assets/mdi_instagram.png" alt="instagram-logo"></a>
+                        <a href="#"><img src="assets/ic_baseline-facebook.png" alt="facebook-logo"></a>
+                    </div>
+                    <div class="footer-privacy">
+                        <a href="#" id="terms-policy">Terms of Use</a>
+                        <p id="gap-break"> | </p>
+                        <a href="#" id="terms-policy">Privacy Policy</a>
+                        <p id="gap-break"> | </p>
+                        <a href="#" id="terms-policy">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
